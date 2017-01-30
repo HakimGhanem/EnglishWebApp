@@ -1,0 +1,31 @@
+
+#entete, #menu, #contenu, #footer {
+padding:1px 0;
+}
+div {
+	text-align:center;
+	}
+
+div#entete {
+	
+	background-color:#00CCFF;
+	}
+div #main {
+	max-width: 960px;
+	margin:auto;
+}	
+div#menu {
+	float:left;
+	width:240px;
+	background-color:#00CCFF;
+}
+div#contenu {
+	margin-left: 245px;
+	background-color:#FFCC00;
+
+	}
+div#footer{
+
+	background-color:#00CCFF;
+	clear:both;
+	}

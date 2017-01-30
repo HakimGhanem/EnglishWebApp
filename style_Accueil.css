@@ -7,6 +7,10 @@
 
     font-family: "Times New Roman";
 }
+h1 
+{
+	color : maroon;
+}
 /*
 .imageAccueil
 {
@@ -17,3 +21,15 @@
 /*
 Style sheet pour englishApp
 */
+
+/* 
+exemple
+{
+	text-align : center;
+}
+
+exemple
+{
+	text-align : justify;
+}
+*/ 

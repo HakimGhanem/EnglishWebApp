@@ -5,4 +5,4 @@ English app to learn english
 Chouder Sofian
 Ghanem Hakim
 
-Project developped for Telecom Nancy, an french engineer school
+Project developped for Telecom Nancy, a french engineering school

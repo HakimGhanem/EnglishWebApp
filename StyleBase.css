@@ -12,7 +12,6 @@ div#entete {
     background-attachment: fixed; /* Le fond restera fixe */
     background-repeat: no-repeat; /* Le fond ne sera pas répété */
     background-position: top left; /* Le fond sera placé en haut à droite */
-	background-color:#AADDFF;
 	}
 
 div #main {
@@ -20,18 +19,18 @@ div #main {
 	margin:auto;
 }	
 div#menu {
-	float:left;
-	width:240px;
-	background-color:#00CCFF;
+	font-family: "Lucida Sans Unicode";
+    float:left;
+	width:240px; 
 }
 div#contenu {
-	margin-left: 245px;
-	background-color:#FFCC00;
+	font-family: "Lucida Sans Unicode";
+    margin-left: 245px;
+
 
 	}
 div#footer{
 
-	background-color:#00CCFF;
 	clear:both;
 	}
 

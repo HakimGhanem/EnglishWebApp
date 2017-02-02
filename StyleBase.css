@@ -7,11 +7,12 @@ div {
 	}
 
 div#entete {
-	height:100px;
-    background-image: url("images/soleil2.jpg");
+	font-family: "Lucida Sans Unicode";
+    height:100px;
+    background-image: url("images/accueilMaison.jpg");
     background-attachment: fixed; /* Le fond restera fixe */
     background-repeat: no-repeat; /* Le fond ne sera pas répété */
-    background-position: top left; /* Le fond sera placé en haut à droite */
+    background-position: top left; /* Le fond sera placé en haut à gauche */
 	}
 
 div #main {
@@ -26,7 +27,7 @@ div#menu {
 div#contenu {
 	font-family: "Lucida Sans Unicode";
     margin-left: 245px;
-
+    text-align: center;
 
 	}
 div#footer{

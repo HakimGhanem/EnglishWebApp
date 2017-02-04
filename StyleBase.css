@@ -9,7 +9,6 @@ div {
 div#entete {
 	font-family: "Lucida Sans Unicode";
     height:100px;
-    background-image: url("images/accueilMaison.jpg");
     background-attachment: fixed; /* Le fond restera fixe */
     background-repeat: no-repeat; /* Le fond ne sera pas répété */
     background-position: top left; /* Le fond sera placé en haut à gauche */
@@ -30,6 +29,8 @@ div#contenu {
     text-align: center;
 
 	}
+
+
 div#footer{
 
 	clear:both;

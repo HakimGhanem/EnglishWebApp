@@ -1,3 +1,9 @@
+html{
+    background : url("images/fond.png");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-attachment:fixed;
+
+}
 
 #entete, #menu, #contenu, #footer {
 padding:1px 0;

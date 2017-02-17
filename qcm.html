@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+<title>QCM</title>
+<link rel="icon" href="./photos/anim2.gif" type="image/gif">
+<style type="text/css">
+body {background-color: #A8BBE6;}a {color: blue;}a:hover {color: #AB6100;}a:link {color: brown;}
+</style>
+</head>
+ 
+<body>
+<script type="text/javascript">
+dateheure = new Date();
+document.write("Nous sommes le "+dateheure.getDate()+"/"+(dateheure.getMonth()+1)+"/"+dateheure.getFullYear()+"<br>"); document.write("et il est actuellement "+dateheure.getHours()+":"+dateheure.getMinutes());
+</script>
+ 
+<br /><br />
+<form action="qcm.php" method="post">
+<p>Quelles est la place du pilote dans un avion ? :<br />
+<input type="radio" name="choice" value="1">A gauche
+<input type="radio" name="choice" value="2">A droite</p>
+ 
+<p>Quelle est l'ann&eacute;e de cr&eacute;ation d'AIR FRANCE ? :<br />
+<input type="radio" name="choice2" value="1">1945
+<input type="radio" name="choice2" value="2">1933
+<input type="radio" name="choice2" value="3">1969</p>
+ 
+<p><input type="RESET" value="Effacer"> Pour recommencer<br />
+<input type="SUBMIT" value="Valider" > Pour envoyer ces informations</p>
+</form>
+ 
+</body>
+</html>

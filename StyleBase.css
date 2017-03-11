@@ -7,6 +7,7 @@ html{
 #entete, #menu, #contenu, #footer {
 padding:1px 0;
 }
+
 div {
 	text-align:center;
 	}
@@ -40,6 +41,7 @@ div#contenu {
 div#footer{
 
 	clear:both;
+    text-align:center;
 	}
 
    #tableau {
@@ -78,4 +80,23 @@ div#footer{
 }
 #tableau a:hover {
     text-decoration:underline;
+}
+#titre_quizz{
+    font-size: 120%;
+  font-weight: bold;
+  font-family:"Segoe print", Arial, Helvetica, sans-serif;
+  color:#6bf;
+  text-align:center;
+  display:inline;
+  line-height:50px;
+}
+fieldset{
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid #6840A4;
+}
+select{
+     background-color:#FFF3F3;
+ margin-top:10px;
+
 }

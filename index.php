@@ -2,60 +2,50 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Apprendre l'anglais en s'amusant</title>
+    <link rel="stylesheet" href="styleBase.css" />
+    <title>EnglishApp-index</title>
 </head>
 
 <body>
+    <!-- ===================== Entete =====================-->
 
-    <!-- L'en-tête -->
-    
-    <header>
+    <div id="entete"></div>
 
-    </header>
-    
+    <div id="main">
+        <!-- ==================== Menu =========================-->
 
-    
-    <!-- Le corps -->
-    
-    <div id="corps">
-        <h1>Apprendre l'anglais en s'amusant</h1>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <a href="PageAccueil.html"  title="Retour à la page d'accueil"><img src="images/accueilMaison.jpg"/></a>
+
+
+                     
+                    <li><a href="Vocabulaire.html" title = "Fiches de vocabulaires">Vocabulary</a></li>
+
+                     <li><a href="grammaire.html" title = "Revoyons les règles de grammaire">Grammar</a></li>
+
+                     <li><a href="toeic.html" title = "Exercices pour le TOEIC">TOEIC</a></li>
+                    <li><a href="cvandcl.html" title = "Comment bien construire son CV et sa CV">CV and Cover Letter</a></li>
+                </ul>
+            </nav>
+         </div>
+    <!-- ======================= Centre Page ===================-->
+
+        <div id="contenu">
+            <h1>Apprendre l'anglais en s'amusant</h1>
         
-        <p>
-            Bienvenue sur mon super site !<br />
-            
-
-
-        </p>
-
-<p>
-       Comment dit-on en Anglais 'Bonjour' ?
-</p>
-<select name="Q1 ">
-    <option value="choix0"> </option>
-    <option value="choix1">Shut up</option>
-    <option value="choix2">Hello</option>
-    <option value="choix3">Papisha</option>
-    <option value="choix4">Reponse D</option>
-</select>
-
-
-<p>
-       Quel est le plat preferé de Chouder ?
-</p>
-<select name="Q2">
-    <option value="choix0"> </option>
-    <option value="choix1">La purée</option>
-    <option value="choix2">Les pizza</option>
-    <option value="choix3">Les bites</option>
-    <option value="choix4">Le porc</option>
-</select>
+                <img src="images/accueil.jpg" alt="Photo introductive">
+                    <p> Bonjour à tous et bienvenue sur ce site pour pouvoir apprendre l'anglais</p>
+        
+        </div>
     </div>
     
-    <!-- Le pied de page -->
+    <!-- ================Le pied de page ===================-->
     
-    <footer id="pied_de_page">
-        <p>Copyright moi, tous droits réservés</p>
-    </footer>
+    <div id="footer">
+        <p>© Copyright la team CodeursFous, tous droits réservés</p>
+    </div>
     
 </body>
 </html>

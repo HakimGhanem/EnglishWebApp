@@ -36,21 +36,18 @@
 		<?php 
         if (isset($_POST['Valider']) ) {
             $choix1 = $_POST['calcul1'];
-            $choix2 = $_POST['calcul2'];
+            $choix2 = $_POST['francais'];
+            $choix3= $_POST['calcul2'];
             if ($choix1==5 ) {
-                if($choix2==24){
-                    echo 'Oui oui oui';
-                    echo '<br>';
-                }else{
-                    echo 'Retourne apprendre les multiplications';
-                }
-                    echo 'Bonne réponse';
-                    echo '<br>';
+               echo 'Combien font 2+3...cela fait bien 5';
+               echo '<br/>';
 
-            }else{
-                    echo 'nahh mon pote t es pas loin ';
-                    echo '<br>';
+            }else if ($choix2=='aime') {
+                echo 'Tu conjugues correctement au présent, c\'est bien' ;
+                echo '<br>';
 
+            }else if ($choix3==24){
+                echo 'Effectivement, 6*4 fait bien 24.';
             }
 
             //echo $_POST['calcul1'.'calcul2'];

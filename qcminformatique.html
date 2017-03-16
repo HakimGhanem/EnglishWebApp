@@ -1,80 +1,125 @@
 <link rel="stylesheet" href="styleBase.css" />
-
+<div id="menu"> 
+<a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
+</div>
+<div id="contenu">
 <h1> What's the english for ...</h1>
+</div>
+<link rel="stylesheet" href="styleBase.css" />
 
-
-
-<div id="tableau">
-<p class="question">1. Disquette :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A floppy drive</label><br/>          
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">A floppy disk</label><br/>                       
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">A disquet</label><br/>       
-</ul>        
-
-
-<p class="question">2. Un répertoire :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A file</label><br/>           
-<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">A directory</label><br/>            
-<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">A network</label><br/>           
-</ul>        
-
-<p class="question">3. Mettre à jour :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">To upgrade</label><br/>            
-<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">To download</label><br/>            
-<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">To delete</label><br/>           
-<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">To unzip</label><br/>       
-</ul>        
-
-<p class="question">4. Un clavier</p>        
-
-<ul class="answers">           
-<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">A joystick</label><br/>            
-<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">A keyboard</label><br/>            
-<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">A mouse</label><br/>                    
-</ul>        
-
-<p class="question">5. Un écran :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A monitor</label><br/>            
-<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">A screen</label><br/>            
-<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">An printer</label><br/>                   
-</ul>        
-
-
+<u>1) Disquette :</u> 
+ 
+<form name="QCM">
+    <input type="radio" name="choix" value="choix0"/> A floppy drive<br/>
+    <input type="radio" name="choix" value="choix1"/> A floppy disk<br/>
+    <input type="radio" name="choix" value="choix2"/> A disquet <br/><br/><br/>
+    <div id="resultat"></div>
+ 
+ 
+<u>2) Un répertoire :</u> 
+ </br>
+    <input type="radio" name="choix1" value="choix3"/> A file<br/>
+    <input type="radio" name="choix1" value="choix4"/> A directory<br/>
+    <input type="radio" name="choix1" value="choix5"/> A network <br/><br/><br/>
+    <div id="resultat1"></div>
+ 
+ 
+<u>3) Mettre à jour:</u><br/>
+ 
+    <input type="radio" name="choix2" value="choix6"/> Tu upgrade<br/>
+    <input type="radio" name="choix2" value="choix7"/> To download<br/>
+    <input type="radio" name="choix2" value="choix8"/> To delete<br/>
+    <input type="radio" name="choix2" value="choix9"/> To unzip<br/><br/><br/>
+        <div id="resultat2"></div>
+ 
+<u>4) Un écran:</u> <br/>
+ 
+    <input type="radio" name="choix3" value="choix10"/> A monitor<br/>
+    <input type="radio" name="choix3" value="choix11"/> A screen<br/>
+    <input type="radio" name="choix3" value="choix12"/> A printer<br/><br/><br/>
+        <div id="resultat3"></div>
+ 
+ 
+<u>5) Un clavier:</u> <br/>
+ 
+    <input type="radio" name="choix4" value="choix13"/> A joystick<br/>
+    <input type="radio" name="choix4" value="choix14"/> A mouse<br/>
+    <input type="radio" name="choix4" value="choix15"/> A keyboard<br/><br/><br/>
+        <div id="resultat4"></div>
+ 
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+ 
 <br/>
-<div id="results">            
-Show me the answers!       
-</div>                
-
-<div id="category1">            
-<p>              
-<strong>Question 1:</strong> The correct answer is the <strong>Answer 2</strong>.</p>        
-</div>        
-
-<div id="category2">            
-<p>              
-<strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
-</div>        
-
-<div id="category3">            
-<p>                
-<strong>Question 3:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
-</div>        
-
-<div id="category4">            
-<p>               
-<strong>Question 4:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
-</div>        
-
-<div id="category5">            
-<p>                
-<strong>Question 5:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
-</div>        
-
+ 
+ 
+ 
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[1].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[0].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix1[1].checked) {
+        modifierText("resultat1", "Bonne réponse !");
+    } else if (f.choix1[0].checked || f.choix1[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat1", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix2[0].checked) {
+        modifierText("resultat2", "Bonne réponse !");
+    } else if (f.choix2[1].checked || f.choix2[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat2", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+     
+    if (f.choix3[0].checked) {
+        modifierText("resultat3", "Bonne réponse !");
+    } else if (f.choix3[1].checked || f.choix3[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat3", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+    if (f.choix4[2].checked) {
+        modifierText("resultat4", "Bonne réponse !");
+    } else if (f.choix4[0].checked || f.choix4[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat4", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+    if (toutEstOk) {
+        alert('Bravo ! Tout bon !');
+    } else {
+        alert('Aïe ! Il y a des erreurs...');
+    }
+    return false;
+}
+</script>

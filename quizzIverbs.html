@@ -39,8 +39,9 @@
         </div>
 
 <form method="post" action="QuizzIverbsC.php">
+
    <fieldset>
-   <label>
+   <!-- <label>
     Combien font 2+3 ? <select name="calcul1">
         <option value="5">5</option>
         <option value="patate" selected="selected">patate</option>
@@ -54,26 +55,39 @@
         <option value="aimes" selected="selected">aimes</option>
         <option value="aiime">aiime</option>
     </select> les pommes?<br />
-    </label>
+    </label> -->
+
+    <label>
+         Drive
+        <select>
+            <option>Droven</option>
+            <option>Driver</option>
+            <option>Drerere</option>
+        </select>
+            Driven
+            Conduire
+        </select> <br />
+        </label>
+
+
+        <form name="breh">
+            <select name="compris" onchange="savoir()">
+                <option value="ni">lundi</option>
+                <option value="na">mardi</option>
+                <option value="ne">mercredi</option>
+            </select>
+        </form>
 
     </fieldset>
-    <fieldset>
-   <label>
-    Combien font 4*6 ? <select name="calcul2">
-        <option value="24">24</option>
-        <option value="9" selected="selected">9</option>
-        <option value="3">3</option>
-    </select> ?<br />
-    </label>
-    </fieldset>
-         <input type="submit" name="Valider" value="Valider"/>
-         <input type="reset" value="Rétablir" />
+    
+
+         <center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
 </form>
  
 
 
      </div>
-    </div>
+    
     
     <!-- ================Le pied de page ===================-->
     

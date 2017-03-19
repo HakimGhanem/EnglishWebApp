@@ -46,7 +46,9 @@
     </label>
          <input type="submit" name="Valider" value="Valider"/>
    		 <input type="reset" value="Rétablir" />
+
 </form>
+
  
 
 

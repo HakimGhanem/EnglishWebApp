@@ -43,6 +43,13 @@ div#contenuFlex {
     display: flex;
     justify-content: space-around; 
 }
+
+div#contenuJustified{
+    font-family: "Lucida Sans Unicode";
+    margin-left: 245px;
+    text-align: center;
+    text-align: justify
+}
 	
 
 

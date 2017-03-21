@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleBase.css" />
+    <title>EnglishApp-accueil</title>
+</head>
+
+<body>
+    <!-- ===================== Entete =====================-->
+
+    <div id="entete"></div>
+
+    <div id="main">
+        <!-- ==================== Menu =========================-->
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <a href="PageAccueil.html"  title="Retour à la page d'accueil"><img src="images/accueilMaison.jpg"/></a>
+
+
+                     
+                    <li><a href="Vocabulaire.html" title = "Fiches de vocabulaires">Vocabulary</a></li>
+
+                     <li><a href="grammaire.html" title = "Revoyons les règles de grammaire">Grammar</a></li>
+
+                     <li><a href="toeic.html" title = "Exercices pour le TOEIC">TOEIC</a></li>
+                    <li><a href="cvandcl.html" title = "Comment bien construire son CV et sa CV">CV and Cover Letter</a></li>
+                </ul>
+            </nav>
+         </div>
+    <!-- ======================= Centre Page ===================-->
+
+        <div id="contenu">  
+
+        <div id="titre_quizz">
+        Quizz pour apprendre les verbes irreguliers
+        </div>
+
+<table id="tableau" summary="QCM Verbes irr">
+
+<thead>
+    <tr>
+      <th scope="col">Base Verbale</th>
+      <th scope="col">Preterit</th>
+      <th scope="col">Participe passe</th>
+      <th scope="col">Traduction</th>
+    </tr>
+  </thead>
+  <tfoot>
+    
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Abide</td>
+      <td>  
+                <input type="radio" name="choix1" value="choix3"/> Abode<br/>
+                <input type="radio" name="choix1" value="choix4"/> Aboden<br/>
+                <input type="radio" name="choix1" value="choix5"/> Aboudou <br/><br/><br/>
+                <div id="resultat1"></div></td>
+        <td>Abode</td>
+        <td>Respecter / Se conformer à </td>
+
+    </tr>
+      
+</tbody>
+</table>
+
+
+
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+ 
+<br/>
+
+ 
+ 
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[1].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[0].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+}
+</script>

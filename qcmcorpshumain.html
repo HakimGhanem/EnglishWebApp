@@ -1,4 +1,13 @@
-<link rel="stylesheet" href="styleBase.css" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+ <link rel="stylesheet" href="styleBase.css" />
+    <title>EnglishApp-accueil</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+</head>
+
+
 <div id="menu"> 
 <a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
 </div>
@@ -46,6 +55,27 @@
     <input type="radio" name="choix4" value="choix14"/> A foot<br/>
     <input type="radio" name="choix4" value="choix15"/> An arm<br/><br/><br/>
         <div id="resultat4"></div>
+
+<u>6) Une ride:</u> <br/>
+ 
+    <input type="radio" name="choix5" value="choix16"/> A wave<br/>
+    <input type="radio" name="choix5" value="choix17"/> A wrinkle<br/>
+    <input type="radio" name="choix5" value="choix18"/> A cheek<br/><br/><br/>
+        <div id="resultat5"></div>
+
+ <u>7) Les sourcils:</u> <br/>
+ 
+    <input type="radio" name="choix6" value="choix19"/> Eye-brows<br/>
+    <input type="radio" name="choix6" value="choix20"/> Eyehair<br/>
+    <input type="radio" name="choix6" value="choix21"/> Eyebrows<br/><br/><br/>
+        <div id="resultat6"></div>
+
+ <u>8) Le menton:</u> <br/>
+ 
+    <input type="radio" name="choix7" value="choix13"/> The chin<br/>
+    <input type="radio" name="choix7" value="choix14"/> The neck<br/>
+    <input type="radio" name="choix7" value="choix15"/> The beard<br/><br/><br/>
+        <div id="resultat7"></div>
  
 <center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
 </form>
@@ -111,6 +141,33 @@ function tester(f) {
     } else if (f.choix4[0].checked || f.choix4[1].checked) {
         toutEstOk = false;
         modifierText("resultat4", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix5[1].checked) {
+        modifierText("resultat5", "Bonne réponse !");
+    } else if (f.choix5[0].checked || f.choix5[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat5", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix6[2].checked) {
+        modifierText("resultat6", "Bonne réponse !");
+    } else if (f.choix6[0].checked || f.choix6[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat6", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix7[0].checked) {
+        modifierText("resultat7", "Bonne réponse !");
+    } else if (f.choix7[1].checked || f.choix7[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat7", "Mauvaise réponse ... Retentez");
     } else {
         alert("Le QCM est mal rempli");
         return false;

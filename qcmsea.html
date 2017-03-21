@@ -1,79 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+ <link rel="stylesheet" href="styleBase.css" />
+    <title>EnglishApp-accueil</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+</head>
+
+<div id="menu"> 
+<a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
+</div>
+<div id="contenu">
+<h1> What's the english for ...</h1>
+</div>
 <link rel="stylesheet" href="styleBase.css" />
 
-<h1> What's the english for ...</h1>
 
+<u>1) Les vacanciers</u> 
+ 
+<form name="QCM">
+    <input type="radio" name="choix" value="choix0"/> Holiday-havers<br/>
+    <input type="radio" name="choix" value="choix1"/> Holiday-makers<br/>
+    <input type="radio" name="choix" value="choix2"/> Holiday people <br/><br/><br/>
+    <div id="resultat"></div>
+ 
+ 
+<u>2) Tribord :</u> 
+ </br>
+    <input type="radio" name="choix1" value="choix3"/> Port<br/>
+    <input type="radio" name="choix1" value="choix4"/> Starboard<br/>
+    <input type="radio" name="choix1" value="choix5"/> Triboard <br/><br/><br/>
+    <div id="resultat1"></div>
+ 
+ 
+<u>3) Un château de sable:</u><br/>
+ 
+    <input type="radio" name="choix2" value="choix6"/> A sandcastle<br/>
+    <input type="radio" name="choix2" value="choix7"/> A sandcassle<br/>
+    <input type="radio" name="choix2" value="choix8"/> A sendcastle<br/>
+    <input type="radio" name="choix2" value="choix9"/> A sand-castle<br/><br/><br/>
+        <div id="resultat2"></div>
+ 
+<u>4) Se noyer:</u> <br/>
+ 
+    <input type="radio" name="choix3" value="choix10"/> To drown<br/>
+    <input type="radio" name="choix3" value="choix11"/> To draw<br/>
+    <input type="radio" name="choix3" value="choix12"/> To darwin<br/><br/><br/>
+        <div id="resultat3"></div>
+ 
+ 
+<u>5) Une vague:</u> <br/>
+ 
+    <input type="radio" name="choix4" value="choix13"/> A pool<br/>
+    <input type="radio" name="choix4" value="choix14"/> A flack<br/>
+    <input type="radio" name="choix4" value="choix15"/> A wave<br/><br/><br/>
+        <div id="resultat4"></div>
 
-<div id="main">
-<p class="question">1. Une flaque :</p>        
+<u>6) La voile:</u> <br/>
+ 
+    <input type="radio" name="choix5" value="choix16"/> Fishing<br/>
+    <input type="radio" name="choix5" value="choix17"/> Sailing<br/>
+    <input type="radio" name="choix5" value="choix18"/> Diving<br/><br/><br/>
+        <div id="resultat5"></div>
 
-<ul class="answers">            
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A pool</label><br/>          
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">A flack</label><br/>                       
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">A wave</label><br/>       
-</ul>        
+ <u>7) Bronzé:</u> <br/>
+ 
+    <input type="radio" name="choix6" value="choix19"/> Brown<br/>
+    <input type="radio" name="choix6" value="choix20"/> Wet<br/>
+    <input type="radio" name="choix6" value="choix21"/> Tanned<br/><br/><br/>
+        <div id="resultat6"></div>
 
-
-<p class="question">2. Se noyer :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">To draw</label><br/>           
-<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">To drawn</label><br/>            
-<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">To darwin</label><br/>           
-</ul>        
-
-<p class="question">3. Un chatêau de sable :</p>        
-
-<ul class="answers">            
-<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">A sand-castle</label><br/>            
-<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">A sandcassle</label><br/>            
-<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">A sendcastle</label><br/>           
-<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">A sandcastle</label><br/>       
-</ul>        
-
-<p class="question">4. Tribord</p>        
-
-<ul class="answers">           
-<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Starboard</label><br/>            
-<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Port</label><br/>            
-<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Triboard</label><br/>                    
-</ul>        
-
-<p class="question">5. Les vacanciers</p>        
-
-<ul class="answers">            
-<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Holiday-havers</label><br/>            
-<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Holiday-makers</label><br/>            
-<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Holiday people</label><br/>                   
-</ul>        
-
-
+ <u>8) Un coquillage:</u> <br/>
+ 
+    <input type="radio" name="choix7" value="choix13"/> A shell<br/>
+    <input type="radio" name="choix7" value="choix14"/> A bash<br/>
+    <input type="radio" name="choix7" value="choix15"/> A git<br/><br/><br/>
+        <div id="resultat7"></div>
+ 
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+ 
 <br/>
-<div id="results">            
-Show me the answers!       
-</div>                
-
-<div id="category1">            
-<p>              
-<strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>        
-</div>        
-
-<div id="category2">            
-<p>              
-<strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
-</div>        
-
-<div id="category3">            
-<p>                
-<strong>Question 3:</strong> The correct answer is <strong>Answer 4</strong>.</p>        
-</div>        
-
-<div id="category4">            
-<p>               
-<strong>Question 4:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
-</div>        
-
-<div id="category5">            
-<p>                
-<strong>Question 5:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
-</div>        
-
+ 
+ 
+ 
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[1].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[0].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix1[1].checked) {
+        modifierText("resultat1", "Bonne réponse !");
+    } else if (f.choix1[0].checked || f.choix1[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat1", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix2[0].checked) {
+        modifierText("resultat2", "Bonne réponse !");
+    } else if (f.choix2[1].checked || f.choix2[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat2", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+     
+    if (f.choix3[0].checked) {
+        modifierText("resultat3", "Bonne réponse !");
+    } else if (f.choix3[1].checked || f.choix3[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat3", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+    if (f.choix4[2].checked) {
+        modifierText("resultat4", "Bonne réponse !");
+    } else if (f.choix4[0].checked || f.choix4[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat4", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix5[1].checked) {
+        modifierText("resultat5", "Bonne réponse !");
+    } else if (f.choix5[0].checked || f.choix5[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat5", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix6[2].checked) {
+        modifierText("resultat6", "Bonne réponse !");
+    } else if (f.choix6[0].checked || f.choix6[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat6", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ if (f.choix7[0].checked) {
+        modifierText("resultat7", "Bonne réponse !");
+    } else if (f.choix7[1].checked || f.choix7[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat7", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+    if (toutEstOk) {
+        alert('Bravo ! Tout bon !');
+    } else {
+        alert('Aïe ! Il y a des erreurs...');
+    }
+    return false;
+}
+</script>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleBase.css" />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+</head>
+
+        
+
+<body background="images/fond.png">
+  
+
+<div id="menu"> 
+<a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
+</div>
+<div id="main"> </div>
+<div id="menu"> </div>
+
+<!-- <div id="contenu"> -->
+<!-- Ne pas mettre dans contenu sinon ça bug --> 
+<h1> Michael Jackson - Beat it </h1>
+
+<div id="contenu"> 
+
+	<iframe width="854" height="480" src="https://www.youtube.com/embed/Ym0hZG-zNOk" frameborder="0" allowfullscreen></iframe>
+	
+<form name="QCM">
+They told him, "Don't you ever come around <input type="radio" name="choix" value="choix0"/> here
+    <input type="radio" name="choix" value="choix1"/> there
+    <input type="radio" name="choix" value="choix2"/> these
+        <div id="resultat"></div>
+Don't wanna see your face. You better disappear"</br>
+The fire's in their eyes and their words are really clear</br>
+So beat it, just beat it</br></br>
+
+You better run, you better do what you can</br>
+Don't wanna see no blood, don't be a macho man</br>
+You wanna be <input type="radio" name="choix1" value="choix3"/> though
+    		<input type="radio" name="choix1" value="choix4"/> thug
+    		<input type="radio" name="choix1" value="choix5"/> thoug
+        <div id="resultat1"></div>, better do what you can</br>
+So beat it, but you wanna be bad</br></br>
+
+[Chorus]</br>
+Just beat it, beat it, beat it, beat it</br>
+No one wants to be <input type="radio" name="choix2" value="choix6"/> deceased
+    				<input type="radio" name="choix2" value="choix7"/> defeated
+    				<input type="radio" name="choix2" value="choix8"/> decapitated
+        <div id="resultat2"></div>
+Showin' how funky strong is your fight</br>
+It doesn't matter who's wrong or right</br></br>
+
+Just beat it, beat it [4x]</br></br>
+
+They're out to get you, better leave while you can</br>
+Don't wanna be a boy, you wanna be a man</br>
+You wanna stay <input type="radio" name="choix3" value="choix9"/> alife
+    			<input type="radio" name="choix3" value="choix10"/> in life
+    			<input type="radio" name="choix3" value="choix11"/> alive
+        <div id="resultat3"></div>, better do what you can</br>
+So beat it, just beat it</br></br>
+
+You have to show them that you're really not scared</br>
+You're playin' with your life, this ain't no truth or dare</br>
+They'll kick you, then they beat you, then they'll tell you it's fair</br>
+So beat it, but you wanna be bad</br></br>
+
+[Chorus 2x]</br></br>
+Just beat it, beat it, beat it, beat it</br>
+No one wants to be defeated</br>
+Showin' how funky strong is your fight</br>
+It doesn't matter who's wrong or right</br></br>
+
+Just beat it, beat it, beat it, beat it, beat it</br></br>
+
+Beat it, beat it, beat it, beat it</br>
+No one wants to be defeated</br>
+Showin' how funky strong is your fight</br>
+It <input type="radio" name="choix4" value="choix12"/> doesn't matter
+    <input type="radio" name="choix4" value="choix13"/> does matter
+    <input type="radio" name="choix4" value="choix14"/> dose not matter
+        <div id="resultat4"></div> who's wrong or right</br></br>
+
+[Chorus 3x]</br></br>
+Just beat it, beat it, beat it, beat it</br>
+No one wants to be defeated</br>
+Showin' how funky strong is your fight</br>
+It doesn't matter who's wrong or right</br></br>
+
+Just beat it, beat it</br>
+Beat it, beat it, beat it</br>
+</div>
+</div>
+</br></br></br>
+</body>
+
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+
+
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[0].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[1].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix1[2].checked) {
+        modifierText("resultat1", "Bonne réponse !");
+    } else if (f.choix1[0].checked || f.choix1[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat1", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix2[1].checked) {
+        modifierText("resultat2", "Bonne réponse !");
+    } else if (f.choix2[0].checked || f.choix2[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat2", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+     
+    if (f.choix3[2].checked) {
+        modifierText("resultat3", "Bonne réponse !");
+    } else if (f.choix3[1].checked || f.choix3[0].checked) {
+        toutEstOk = false;
+        modifierText("resultat3", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+    if (f.choix4[0].checked) {
+        modifierText("resultat4", "Bonne réponse !");
+    } else if (f.choix4[1].checked || f.choix4[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat4", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ 
+}
+</script>

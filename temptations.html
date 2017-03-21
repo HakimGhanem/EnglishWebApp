@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleBase.css" />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+</head>
+
+        
+
+<body background="images/fond.png">
+  
+
+<div id="menu"> 
+<a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
+</div>
+<div id="main"> </div>
+<div id="menu"> </div>
+
+<!-- <div id="contenu"> -->
+<!-- Ne pas mettre dans contenu sinon ça bug -->
+<div id="contenu">  
+<h1> The Temptations - My girl </h1>
+</div> 
+
+	<iframe width="640" height="360" src="https://www.youtube.com/embed/6IUG-9jZD-g" frameborder="0" allowfullscreen></iframe>
+
+<form name="QCM">
+I've got sunshine on a cloudy day</br>
+When it's cold outside I've got the month of May</br>
+I guess you'd say</br>
+What can make me <input type="radio" name="choix" value="choix0"/> feed
+    			<input type="radio" name="choix" value="choix1"/> feel
+    			<input type="radio" name="choix" value="choix2"/> speed
+        <div id="resultat"></div> this way?</br>
+My girl, my girl (my girl)</br>
+Talkin' 'bout my girl (my girl)</br></br>
+
+I've got so much <input type="radio" name="choix1" value="choix3"/> hanay
+    			<input type="radio" name="choix1" value="choix4"/> money
+    			<input type="radio" name="choix1" value="choix5"/> honey
+        <div id="resultat1"></div> the bees envy me</br>
+I've got a sweeter song than the birds in the trees, well</br>
+I guess you'd say</br>
+What can make me feel this way?</br>
+My girl (my girl, my girl)</br>
+Talkin' 'bout my girl (my girl)</br></br>
+
+Ooooh</br>
+Hey hey hey</br></br>
+
+I don't need no money, fortune, or fame</br>
+I've got all the riches baby one man can <input type="radio" name="choix2" value="choix6"/> claim
+    									<input type="radio" name="choix2" value="choix7"/> call
+    									<input type="radio" name="choix2" value="choix8"/> catch
+        <div id="resultat2"></div>, well</br>
+I guess you'd say</br>
+What can make me feel this way?</br>
+My girl (my girl, my girl)</br>
+Talkin' 'bout my girl (my girl)</br></br>
+
+I've got sunshine on a <input type="radio" name="choix" value="choix0"/> calley
+    				<input type="radio" name="choix" value="choix1"/> clumsy
+    				<input type="radio" name="choix" value="choix2"/> cloudy
+        <div id="resultat"></div> day with my girl</br>
+I've even got the month of May with my girl</br>
+</br></br></br>
+</body>
+
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+
+
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[1].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[0].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix1[2].checked) {
+        modifierText("resultat1", "Bonne réponse !");
+    } else if (f.choix1[0].checked || f.choix1[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat1", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix2[0].checked) {
+        modifierText("resultat2", "Bonne réponse !");
+    } else if (f.choix2[1].checked || f.choix2[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat2", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+     
+    if (f.choix3[2].checked) {
+        modifierText("resultat3", "Bonne réponse !");
+    } else if (f.choix3[1].checked || f.choix3[0].checked) {
+        toutEstOk = false;
+        modifierText("resultat3", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+}
+</script>

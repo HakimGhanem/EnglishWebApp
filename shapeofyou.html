@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styleBase.css" />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+</head>
+
+        
+
+<body background="images/fond.png">
+  
+
+<div id="menu"> 
+<a href="PageAccueil.html"><img src="images/accueilMaison.jpg" alt="Home"/></a> 
+</div>
+<div id="main"> </div>
+<div id="menu"> </div>
+
+<!-- <div id="contenu"> -->
+<!-- Ne pas mettre dans contenu sinon ça bug --> 
+
+
+<div id="contenu"> 
+<h1> Ed Sheeran - Shape of you </h1>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/JGwWNGJdvx8" frameborder="0" allowfullscreen></iframe>
+</div>
+<form name="QCM">
+
+The club isn't the best place to find a lover</br>
+So the bar is where I go</br>
+Me and my friends at the table doing shots</br>
+Drinking fast and then we talk slow</br>
+Come over and start up a conversation with just me</br>
+And trust me I'll give it a chance now</br>
+Take my hand, stop, put Van the Man on the jukebox</br>
+And then we start to dance, and now I'm singing like</br></br>
+
+Girl, you know I want your <input type="radio" name="choix" value="choix0"/> heart
+    						<input type="radio" name="choix" value="choix1"/> love
+    						<input type="radio" name="choix" value="choix2"/> number
+        					<div id="resultat"></div>
+Your love was handmade for somebody like me</br>
+Come on now, follow my lead</br>
+I may be crazy, don't mind me</br>
+Say, boy, let's not talk too much</br>
+Grab on my waist and put that body on me</br>
+Come on now, follow my lead</br>
+Come, come on now, follow my lead</br></br>
+
+I'm in love with the <input type="radio" name="choix1" value="choix3"/> shape
+    				<input type="radio" name="choix1" value="choix4"/> shame
+    				<input type="radio" name="choix1" value="choix5"/> shave
+        			<div id="resultat1"></div> of you</br>
+We push and pull like a magnet do</br>
+Although my heart is falling too</br>
+I'm in love with your body</br>
+And last night you were in my room</br>
+And now my bedsheets smell like you</br>
+Every day discovering something brand new</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Every day discovering something brand new</br>
+I'm in love with the shape of you</br></br>
+
+One week in we let the <input type="radio" name="choix2" value="choix6"/> sour
+    				<input type="radio" name="choix2" value="choix7"/> store
+    				<input type="radio" name="choix2" value="choix8"/> story
+        			<div id="resultat2"></div> begin</br>
+We're going out on our first date</br>
+You and me are thrifty, so go all you can eat</br>
+Fill up your bag and I fill up a plate</br>
+We talk for hours and hours about the sweet and the sour</br>
+And how your family is doing okay</br>
+Leave and get in a taxi, then kiss in the backseat</br>
+Tell the driver make the radio play, and I'm singing like</br></br>
+
+Girl, you know I want your love</br>
+Your love was handmade for somebody like me</br>
+Come on now, follow my lead</br>
+I may be crazy, don't mind me</br>
+Say, boy, let's not talk too much</br>
+Grab on my waist and put that body on me</br>
+Come on now, follow my lead</br>
+Come, come on now, follow my lead</br></br>
+
+I'm in love with the shape of you</br>
+We push and pull like a <input type="radio" name="choix3" value="choix9"/> magnet
+    					<input type="radio" name="choix3" value="choix10"/> muppet
+    					<input type="radio" name="choix3" value="choix11"/> magnete
+        			<div id="resultat3"></div> do</br>
+Although my heart is falling too</br>
+I'm in love with your body</br>
+And last night you were in my room</br>
+And now my bedsheets smell like you</br>
+Every day discovering something brand new</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Oh—I—oh—I—oh—I—oh—I</br>
+I'm in love with your body</br>
+Every day discovering something brand new</br>
+I'm in love with the shape of you</br></br>
+
+Come on, be my baby, come on [x8]</br></br>
+
+I'm in love with the shape of you</br>
+We push and pull like a magnet do</br>
+Although my heart is falling too</br>
+I'm in love with your body</br>
+Last night you were in my <input type="radio" name="choix4" value="choix12"/> roof
+    						<input type="radio" name="choix4" value="choix13"/> room
+    						<input type="radio" name="choix4" value="choix14"/> broom
+        			<div id="resultat4"></div></br>
+And now my bedsheets smell like you</br>
+Every day discovering something brand new</br>
+I'm in love with your body</br>
+Come on, be my baby, come on</br>
+Come on, be my baby, come on</br>
+I'm in love with your body</br>
+Come on, be my baby, come on</br>
+Come on, be my baby, come on</br>
+I'm in love with your body</br>
+Come on, be my baby, come on</br>
+Come on, be my baby, come on</br>
+I'm in love with your body</br>
+Every day discovering something brand new</br>
+I'm in love with the shape of you</br></br></br>
+
+</div>
+</div>
+</br></br></br>
+</body>
+
+<center><input type="button" value="Correction" onclick="tester(this.form)"/> <input type="reset" value="Effacer" /></center>
+</form>
+
+
+<script type="text/javascript">
+ 
+function modifierText(id, texte) {
+    document.getElementById(id).innerHTML = texte;
+}
+ 
+function tester(f) {
+    var toutEstOk = true;
+ 
+    if (f.choix[1].checked) {
+        modifierText("resultat", "Bonne réponse !");
+ 
+    } else if (f.choix[0].checked || f.choix[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat", "Mauvaise réponse ... Retentez");
+ 
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix1[0].checked) {
+        modifierText("resultat1", "Bonne réponse !");
+    } else if (f.choix1[2].checked || f.choix1[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat1", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+ 
+    if (f.choix2[2].checked) {
+        modifierText("resultat2", "Bonne réponse !");
+    } else if (f.choix2[0].checked || f.choix2[1].checked) {
+        toutEstOk = false;
+        modifierText("resultat2", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+     
+    if (f.choix3[0].checked) {
+        modifierText("resultat3", "Bonne réponse !");
+    } else if (f.choix3[1].checked || f.choix3[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat3", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+    }
+     
+    if (f.choix4[1].checked) {
+        modifierText("resultat4", "Bonne réponse !");
+    } else if (f.choix4[0].checked || f.choix4[2].checked) {
+        toutEstOk = false;
+        modifierText("resultat4", "Mauvaise réponse ... Retentez");
+    } else {
+        alert("Le QCM est mal rempli");
+        return false;
+ }
+ 
+}
+</script>
+
+
+
+
